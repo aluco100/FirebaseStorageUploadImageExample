@@ -7,8 +7,12 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list>
+    <ion-item *ngIf="photo">
+      <img src="{{photo}}">
+    </ion-item>
+    <button ion-item detail-none color="primary" (click)="upload()">
+      Subir foto
+    </button>
+  </ion-list>
 </ion-content>
