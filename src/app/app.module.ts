@@ -20,6 +20,7 @@ import { ImageResizer } from '@ionic-native/image-resizer';
 
 import { ImageService } from "../services/image.service";
 import { PermissionsService } from "../services/permission.service";
+import { IonicImageViewerModule } from 'ionic-img-viewer';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyBEG-1DEq5dQQ908gFeJaqZOvVKTq4fxfo",
@@ -42,6 +43,7 @@ export const firebaseConfig = {
     AngularFireStorageModule,
     AngularFireAuthModule,
     AngularFireDatabaseModule,
+    IonicImageViewerModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
